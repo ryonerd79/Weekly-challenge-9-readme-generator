@@ -4,58 +4,59 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
+        name: 'title',
+        message: 'What is the title of your repository?', 
+    },
+
+    {
+        type: 'input',
+        name: 'table of contents',
+        message: 'What is in your table of contents?',
+    },
+
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What is installed on your repository?',
+    },
+    {
+        
+        type: 'input',
         name: 'description',
         message: 'What is the repository about?',
-},
 
-{
-    type: 'input',
-    name: 'table of contents',
-    message: 'What is in your table of contents?',
-},
-
-{
-    type: 'input',
-    name: 'installation',
-    message: 'What is installed on your repository?',
-},
-{
-    type: 'input',
-    name: 'title',
-    message: 'What is the title of your repository?',
-    
-},
+    },
 
 
-{
-    type: 'input',
-    name: 'usage',
-    message: 'What is the usage?',
-},
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage?',
+    },
 
-{
-    type: 'input',
-    name: 'license',
-    message: 'What is the license on your repository?',
-},
+    {
+        type: 'input',
+        name: 'license',
+        message: 'What is the license on your repository?',
+    },
 
-{
-    type: 'input',
-    name: 'contributing',
-    message: 'Who is contributing your repository?',
-},
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Who is contributing your repository?',
+    },
 
-{
-    type: 'input',
-    name: 'tests',
-    message: 'What are the tests on your repository?',
-},
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What are the tests on your repository?',
+    },
 
-{
-    type: 'input',
-    name: 'questions',
-    message: 'What are the questions on your repository?',
-},
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'What are the questions on your repository?',
+    },
 
 
 
@@ -64,10 +65,10 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();

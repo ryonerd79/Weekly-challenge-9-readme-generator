@@ -20,9 +20,42 @@ const questions = [
     message: 'What is installed on your repository?',
 },
 {
-
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of your repository?',
     
-}
+},
+
+
+{
+    type: 'input',
+    name: 'usage',
+    message: 'What is the usage?',
+},
+
+{
+    type: 'input',
+    name: 'license',
+    message: 'What is the license on your repository?',
+},
+
+{
+    type: 'input',
+    name: 'contributing',
+    message: 'Who is contributing your repository?',
+},
+
+{
+    type: 'input',
+    name: 'tests',
+    message: 'What are the tests on your repository?',
+},
+
+{
+    type: 'input',
+    name: 'questions',
+    message: 'What are the questions on your repository?',
+},
 
 
 

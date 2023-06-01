@@ -37,9 +37,15 @@ const questions = [
     },
 
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'What is the license on your repository?',
+        choices: [
+            'MIT',
+            'AGP',
+            'GPL',
+            'APACHE'
+        ]
     },
 
     {
@@ -65,10 +71,16 @@ const questions = [
         name: 'github',
         message: 'What is your github?',
     },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+    },
 ];
 inquirer.prompt(questions)
 .then((data) => {
-    fs.writeFile(`${data.github}.md`, generateMarkdown(data), (err) => err ? console.error(err) : console.log('Readme generated'))
+    fs.writeFile(`README.md`, generateMarkdown(data), (err) => err ? console.error(err) : console.log('Readme generated'))
 })
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }

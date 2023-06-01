@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
+const inquirer = require('inquirer')
+const fs = require('fs')
+const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -10,7 +12,7 @@ const questions = [
 
     {
         type: 'input',
-        name: 'table of contents',
+        name: 'tableOfContents',
         message: 'What is in your table of contents?',
     },
 
@@ -58,12 +60,16 @@ const questions = [
         message: 'What are the questions on your repository?',
     },
 
-
-
-
-
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github?',
+    },
 ];
-
+inquirer.prompt(questions)
+.then((data) => {
+    fs.writeFile(`${data.github}.md`, generateMarkdown(data), (err) => err ? console.error(err) : console.log('Readme generated'))
+})
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 

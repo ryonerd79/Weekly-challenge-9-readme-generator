@@ -1,4 +1,4 @@
-# Music list ![license](https://img.shields.io/badge/license-MIT-red)
+# Songs list ![license](https://img.shields.io/badge/license-MIT-red)
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -11,25 +11,25 @@
 8. [Github](#github)
 
 ## Installation
-Node.js
+Json
 
 ## Description
-A list of songs currently out right now
+A list of Songs currently out right now
 
 ## Usage
-To keep updated with the latest songs
+To find out about the released Songs
 
 ## license
 The MIT license is a permissive license, meaning it carries very few restrictions in these areas.
 
 ## Contributing
-Me and Steven
+Me
 
 ## Tests
 Jest
 
 ## Questions
-My contact info
+My Contact info
 dannyroh2500@gmail.com
 [Github](www.github.com/ryonerd79)
 

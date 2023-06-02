@@ -42,7 +42,7 @@ const questions = [
         message: 'What is the license on your repository?',
         choices: [
             'MIT',
-            'AGP',
+            'AGPL',
             'GPL',
             'APACHE'
         ]
